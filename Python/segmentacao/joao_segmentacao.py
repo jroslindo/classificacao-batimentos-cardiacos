@@ -57,6 +57,7 @@ def segmentation(file_name, segmentos):
     # ax1.plot(sig)
     # ax2.plot(resultado_segmentado)
     # plt.show()
+    # plt.waitforbuttonpress()
 
 def main(argumento):
     elevate_process_priority()
