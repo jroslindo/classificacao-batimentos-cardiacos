@@ -41,17 +41,20 @@ def segmentation(file_name, segmentos):
         if aux == 1 and comecou == False:            
             comecou = True
             inicial = i
-        elif aux == 1 and anterior == 4 and comecou == True:
-            estagio +=1
-            if estagio == 3: #quando finalizar a terceira fase, finaliza o processo
-                comecou = False
-                final = i
-                break
+            break
+
+
+        # elif aux == 1 and anterior == 4 and comecou == True: removi esta logica pois n estava conseguindo aproximadamente 3 segundos de batimento, dificultando a mfcc
+        #     estagio +=1
+        #     if estagio == 3: #quando finalizar a terceira fase, finaliza o processo
+        #         comecou = False
+        #         final = i
+        #         break
     
-    resultado_segmentado = sig[inicial:final]
+    resultado_segmentado = sig[inicial:inicial+6000]
     
 
-    wav.write("resultado.wav", rate, resultado_segmentado)
+    wav.write("..\\segmentacao\\resultados\\"+file_name, rate, resultado_segmentado)
 
     # fig, (ax1, ax2) = plt.subplots(2)
     # ax1.plot(sig)
@@ -64,7 +67,7 @@ def main(argumento):
     segmentos_matlab = call_matlab_script(argumento)
     
     segmentation(argumento, segmentos_matlab)
-    print("fim")
+    # print("fim")
     
     
 
