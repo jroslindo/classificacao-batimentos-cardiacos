@@ -10,7 +10,7 @@ semaforo = threading.Semaphore()
 
 def THREAD(lista):
     print("iniciando thread")
-    os.system("python ..\\segmentacao\\joao_segmentacao.py " + str(lista)) 
+    os.system("python ..\\segmentacao\\joao_segmentacao.py " + str(lista))
     os.system("python ..\\mfcc\\joao_mfcc.py " + str(lista)) 
 
     global semaforo
