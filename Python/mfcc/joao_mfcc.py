@@ -14,7 +14,7 @@ def main(file):
 
     # utilizar como principal para salvar
     with open("..\\mfcc\\resultados\\"+file[:-3]+"txt", "wb") as fp:   #Pickling
-        pickle.dump(fbank_feat[0:301:,0:13], fp)
+        pickle.dump(fbank_feat[0:301:,0:6], fp)
 
     
 
