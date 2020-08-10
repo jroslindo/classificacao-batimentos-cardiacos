@@ -1,27 +1,37 @@
 from Lib import * 
 
+### modelo da rede neural e parametros
 model = ANN()
-# print(model)
-# exit()
-
-criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
-
-X_train, y_train = load_mfcc_GPU()
+model.cuda()
+criterion = nn.MSELoss()
+optimizer = torch.optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
 
 
-epochs = 100
-loss_arr = []
-for i in range(epochs):
-   y_hat = model.forward(X_train)
-   loss = criterion(y_hat, y_train)
-   loss_arr.append(loss)
- 
-   if i % 10 == 0:
-       print(f'Epoch: {i} Loss: {loss}')
- 
-   optimizer.zero_grad()
-   loss.backward()
-   optimizer.step()
 
-print("terminou de treinar")
+
+# scaler = GradScaler()
+
+entrada, respostas_vetor = load_mfcc_GPU()
+
+for epoch in range(100):  # loop over the dataset multiple times
+
+    running_loss = 0.0
+
+    # zero the parameter gradients
+    optimizer.zero_grad()
+
+    # forward + backward + optimize
+    outputs = model(entrada.unsqueeze(0))
+    print(outputs)
+    
+    loss = criterion(outputs, respostas_vetor)
+    loss.backward()
+    optimizer.step()
+
+    # print statistics
+    running_loss += loss.item()
+    
+    # print(loss)
+    running_loss = 0.0
+
+print('Finished Training')

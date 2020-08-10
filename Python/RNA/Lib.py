@@ -20,7 +20,7 @@ def load_mfcc_GPU():
         with open("..\\mfcc\\resultados\\" + i, "rb") as fp:
         	retorno.append(pickle.load(fp))
     retorno = torch.cuda.FloatTensor(retorno)
-    # print(len(retorno[0]))
+    # retorno.requires_grad_()
 
     ################################## gabarito        
     arquivo = open("REFERENCE.csv", 'r')
@@ -30,16 +30,19 @@ def load_mfcc_GPU():
     for i in linha:
         i = i.replace('\n', '')
         i = i.split(',')[1]
-        if int(i) == 1:
-            retorno_gabarito.append(True)
-        else:
-            retorno_gabarito.append(False)
 
-    retorno_gabarito = torch.cuda.BoolTensor(retorno_gabarito)
-    # print(len(retorno[0][0]))
+        # break
+        if int(i) == -1:
+            retorno_gabarito.append(0)
+        else:
+            retorno_gabarito.append(1)
+        
+        break
+
+    retorno_gabarito = torch.cuda.FloatTensor(retorno_gabarito)
+    # retorno_gabarito.requires_grad_()
     
     
-    # print(retorno)
     return retorno, retorno_gabarito
 
 
@@ -47,16 +50,18 @@ def load_mfcc_GPU():
 class ANN(nn.Module):
     def __init__(self):
         super().__init__()
-        self.CV0 = nn.Conv2d(in_channels=1800, out_channels=1800, kernel_size=(2,20))
-        self.MXP0 = nn.MaxPool2d(kernel_size=(1, 20), stride=5)
+        
+        self.CV0 = nn.Conv1d(in_channels=409, out_channels=299, kernel_size=(20,2))
+        self.MXP0 = nn.MaxPool2d(kernel_size=(20, 1), stride=5)
 
-        self.CV1 = nn.Conv2d(in_channels=360, out_channels=360, kernel_size=(2,10))
-        self.MXP1 = nn.MaxPool2d(kernel_size=(1, 4), stride=2)
+        self.CV1 = nn.Conv2d(in_channels=299, out_channels=299, kernel_size=(10,1))
+        self.MXP1 = nn.MaxPool2d(kernel_size=(4,1), stride=2)
 
-        self.FLA = nn.Flatten()
+        # self.FLA = nn.Flatten()
 
-        self.output0 = nn.Linear(in_features=1024, out_features=512)
-        self.output1 = nn.Linear(in_features=512, out_features=2)
+        self.output0 = nn.Linear(in_features=6279, out_features=512)
+        self.output1 = nn.Linear(in_features=512, out_features=1)
+        
 
 
     def forward(self, x):
@@ -64,7 +69,11 @@ class ANN(nn.Module):
         x = F.relu(self.MXP0(x))
         x = F.relu(self.CV1(x))
         x = F.relu(self.MXP1(x))
-        x = F.sigmoid(self.output0(x))
-        x = F.sigmoid(self.output1(x))
-        # x = self.output1(x)
+        
+        x = torch.flatten(x) #start_dim=0, end_dim=-1
+        # print(len(x))
+
+        x = torch.sigmoid(self.output0(x))
+        x = self.output1(x)
+
         return x
