@@ -31,13 +31,12 @@ def load_mfcc_GPU():
         i = i.replace('\n', '')
         i = i.split(',')[1]
 
-        # break
         if int(i) == -1:
             retorno_gabarito.append(0)
         else:
             retorno_gabarito.append(1)
         
-        break
+        # break
 
     retorno_gabarito = torch.cuda.FloatTensor(retorno_gabarito)
     # retorno_gabarito.requires_grad_()
@@ -51,27 +50,31 @@ class ANN(nn.Module):
     def __init__(self):
         super().__init__()
         
-        self.CV0 = nn.Conv1d(in_channels=409, out_channels=299, kernel_size=(20,2))
-        self.MXP0 = nn.MaxPool2d(kernel_size=(20, 1), stride=5)
+        self.CV0 = nn.Conv1d(in_channels=1, out_channels=64, kernel_size=(1,1), bias=True)
+        self.MXP0 = nn.MaxPool2d(kernel_size=(1, 1), stride=(5,1))
 
-        self.CV1 = nn.Conv2d(in_channels=299, out_channels=299, kernel_size=(10,1))
-        self.MXP1 = nn.MaxPool2d(kernel_size=(4,1), stride=2)
+        self.CV1 = nn.Conv2d(in_channels=64, out_channels=64, kernel_size=(1,1), bias=True)
+        self.MXP1 = nn.MaxPool2d(kernel_size=(1,1), stride=(2,1))
 
         # self.FLA = nn.Flatten()
 
-        self.output0 = nn.Linear(in_features=6279, out_features=512)
+        self.output0 = nn.Linear(in_features=11520, out_features=512)
         self.output1 = nn.Linear(in_features=512, out_features=1)
         
 
 
     def forward(self, x):
         x = F.relu(self.CV0(x))
+        print(x.shape)
         x = F.relu(self.MXP0(x))
+        print(x.shape)
         x = F.relu(self.CV1(x))
+        print(x.shape)
         x = F.relu(self.MXP1(x))
+        print(x.shape)
         
         x = torch.flatten(x) #start_dim=0, end_dim=-1
-        # print(len(x))
+        print(len(x))
 
         x = torch.sigmoid(self.output0(x))
         x = self.output1(x)
