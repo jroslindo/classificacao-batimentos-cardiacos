@@ -10,42 +10,50 @@ entrada, respostas_vetor = load_mfcc_GPU()
 
 
 
-entrada = entrada[0].unsqueeze(0)
+# entrada = entrada[0].unsqueeze(0)
 
+
+# running_loss = 0.0
+
+# optimizer.zero_grad()
+
+# outputs = model(entrada.unsqueeze(0))
+
+# loss = criterion(outputs, respostas_vetor[0].unsqueeze(0))
+
+# loss.backward()
+
+# optimizer.step()
+
+# running_loss += loss.item()
+
+# print(running_loss)
 
 running_loss = 0.0
-
-optimizer.zero_grad()
-
-outputs = model(entrada.unsqueeze(0))
-
-loss = criterion(outputs, respostas_vetor[0].unsqueeze(0))
-
-loss.backward()
-
-optimizer.step()
-
-running_loss += loss.item()
-
-print(running_loss)
-
-
-# for epoch in range(100):  # loop over the dataset multiple times
-
-#     optimizer.zero_grad()
-
-#     outputs = model(entrada.unsqueeze(0))
+for epoch in range(50):  # loop over the dataset multiple times
     
-#     loss = criterion(outputs, respostas_vetor[0])
+    for i in range(len(entrada)):
+        entrada_aux = entrada[i].unsqueeze(0)    
 
-#     loss.backward()
-    
-#     optimizer.step()
+        optimizer.zero_grad()
 
-#     running_loss += loss.item()
+        outputs = model(entrada_aux.unsqueeze(0))
+
+        loss = criterion(outputs, respostas_vetor[i].unsqueeze(0))
+
+        loss.backward()
+
+        optimizer.step()
+
+        running_loss += loss.item()
+
+    if (epoch%10==9):
+        print(str(running_loss/(409*epoch)) + "\n---------------------\n")
+
+    # input()
     
 
 
 
 
-print('Finished Training:  ' + str(running_loss))
+print('Finished Training:  ' + str(running_loss/(409*epoch)))
