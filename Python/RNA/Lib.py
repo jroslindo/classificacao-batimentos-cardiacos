@@ -11,19 +11,55 @@ import os
 
 
 def load_mfcc_GPU():
-    lista = os.listdir("..\\mfcc\\resultados")
+    lista = os.listdir("..\\..\\Treino")
     retorno = []
     retorno_gabarito = []
 
     ######################################pega os mfcc
-    for i in lista:
-        with open("..\\mfcc\\resultados\\" + i, "rb") as fp:
-        	retorno.append(pickle.load(fp))
+    for i in lista[:-1]:
+        with open("..\\..\\Treino\\" + i, "rb") as fp:
+            retorno.append(pickle.load(fp))
+
     retorno = torch.cuda.FloatTensor(retorno)
     # retorno.requires_grad_()
 
     ################################## gabarito        
-    arquivo = open("REFERENCE.csv", 'r')
+    arquivo = open("..\\..\\Treino\\REFERENCE_treino.csv", 'r')
+    
+    linha = arquivo.readlines()
+
+    for i in linha:
+        i = i.replace('\n', '')
+        i = i.split(',')[1]
+
+        if int(i) == -1:
+            retorno_gabarito.append(0)
+        else:
+            retorno_gabarito.append(1)
+        
+        # break
+
+    retorno_gabarito = torch.cuda.FloatTensor(retorno_gabarito)
+    # retorno_gabarito.requires_grad_()
+    
+    
+    return retorno, retorno_gabarito
+
+def load_mfcc_GPU_validacao():
+    lista = os.listdir("..\\..\\validacao")
+    retorno = []
+    retorno_gabarito = []
+
+    ######################################pega os mfcc
+    for i in lista[:-1]:
+        with open("..\\..\\validacao\\" + i, "rb") as fp:
+            retorno.append(pickle.load(fp))
+
+    retorno = torch.cuda.FloatTensor(retorno)
+    # retorno.requires_grad_()
+
+    ################################## gabarito        
+    arquivo = open("..\\..\\validacao\\REFERENCE_validacao.csv", 'r')
     
     linha = arquivo.readlines()
 
