@@ -20,43 +20,43 @@ target = torch.load('target.pt')
 entrada, entrada_validacao , respostas_vetor, respostas_vetor_validacao = train_test_split(data, target, test_size=0.2, random_state=42)
 entrada.requires_grad_()
 
-print("Começando o treino")
-running_loss = 0.0
+# print("Começando o treino")
+# running_loss = 0.0
 
-for epoch in range(50):  # loop over the dataset multiple times
-    print(epoch)
-    for i in range(len(entrada)):
-        entrada_aux = entrada[i].unsqueeze(0)
+# for epoch in range(50):  # loop over the dataset multiple times
+#     print(epoch)
+#     for i in range(len(entrada)):
+#         entrada_aux = entrada[i].unsqueeze(0)
 
-        optimizer.zero_grad()
+#         optimizer.zero_grad()
 
-        outputs = model(entrada_aux.unsqueeze(0))
+#         outputs = model(entrada_aux.unsqueeze(0))
 
-        # if i == 0:
-        #     print(outputs)
-        #     print(respostas_vetor[i])
-        #     print("\n--------------------------\n")
+#         # if i == 0:
+#         #     print(outputs)
+#         #     print(respostas_vetor[i])
+#         #     print("\n--------------------------\n")
 
-        # loss = criterion(outputs, respostas_vetor[i].unsqueeze(0))
-        loss = criterion(outputs.unsqueeze(0), respostas_vetor[i].unsqueeze(0)) #respostas_vetor[i].unsqueeze(0)
+#         # loss = criterion(outputs, respostas_vetor[i].unsqueeze(0))
+#         loss = criterion(outputs.unsqueeze(0), respostas_vetor[i].unsqueeze(0)) #respostas_vetor[i].unsqueeze(0)
 
-        if i == 0:
-            loss.backward(retain_graph=True)
-        else:
-            loss.backward(retain_graph=True)
+#         if i == 0:
+#             loss.backward(retain_graph=True)
+#         else:
+#             loss.backward(retain_graph=True)
 
-        optimizer.step()
+#         optimizer.step()
 
-        running_loss += loss.item()
+#         running_loss += loss.item()
 
-    if (epoch % 10 == 9):
-        print(str(running_loss/(len(entrada)*epoch)) + "\n---------------------\n")
+#     if (epoch % 10 == 9):
+#         print(str(running_loss/(len(entrada)*epoch)) + "\n---------------------\n")
 
 
 
-print('Finished Training:  ' + str(running_loss/(len(entrada)*epoch)) + " --Salvando o modelo")
+# print('Finished Training:  ' + str(running_loss/(len(entrada)*epoch)) + " --Salvando o modelo")
 
-torch.save(model.state_dict(), "net.pth")
+# torch.save(model.state_dict(), "net.pth")
 
 
 
@@ -71,6 +71,8 @@ torch.save(model.state_dict(), "net.pth")
 
 
 print("validando: \n\n")
+
+model.load_state_dict(torch.load("net.pth"))
 model.eval()
 desconhecido = 0
 certos = 0
