@@ -20,10 +20,11 @@ target = torch.load('target.pt')
 entrada, entrada_validacao , respostas_vetor, respostas_vetor_validacao = train_test_split(data, target, test_size=0.2, random_state=42)
 entrada.requires_grad_()
 
+
 # print("Começando o treino")
 # running_loss = 0.0
 
-# for epoch in range(50):  # loop over the dataset multiple times
+# for epoch in range(100):  # loop over the dataset multiple times
 #     print(epoch)
 #     for i in range(len(entrada)):
 #         entrada_aux = entrada[i].unsqueeze(0)
@@ -72,7 +73,7 @@ entrada.requires_grad_()
 
 print("validando: \n\n")
 
-model.load_state_dict(torch.load("net.pth"))
+model.load_state_dict(torch.load("net-90.pth"))
 model.eval()
 desconhecido = 0
 certos = 0
@@ -86,7 +87,7 @@ for i in range (len(entrada_validacao)):
 
     if predicted[1][0].item() == respostas_vetor_validacao[i].item():
         certos += 1
-    else:
+    else:        
         errados += 1
     
 
