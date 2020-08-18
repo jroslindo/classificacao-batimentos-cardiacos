@@ -21,7 +21,7 @@ def load_mfcc_GPU():
             retorno.append(pickle.load(fp))
 
     retorno = torch.cuda.FloatTensor(retorno)
-    # retorno.requires_grad_()
+    retorno.requires_grad_()
 
     ################################## gabarito        
     arquivo = open("..\\..\\Treino\\REFERENCE_treino.csv", 'r')
@@ -39,11 +39,13 @@ def load_mfcc_GPU():
         
         # break
 
-    retorno_gabarito = torch.cuda.FloatTensor(retorno_gabarito)
+    # retorno_gabarito = torch.cuda.FloatTensor(retorno_gabarito)
+    retorno_gabarito = torch.cuda.LongTensor(retorno_gabarito)
     # retorno_gabarito.requires_grad_()
+    torch.save(retorno, "data.pt")
+    torch.save(retorno_gabarito, "target.pt")
     
-    
-    return retorno, retorno_gabarito
+    # return retorno, retorno_gabarito
 
 def load_mfcc_GPU_validacao():
     lista = os.listdir("..\\..\\validacao")
@@ -65,12 +67,22 @@ def load_mfcc_GPU_validacao():
 
     for i in linha:
         i = i.replace('\n', '')
-        i = i.split(',')[1]
+        
 
-        if int(i) == -1:
-            retorno_gabarito.append(0)
-        else:
-            retorno_gabarito.append(1)
+        try:
+            i = i.split(',')[1]
+        except:
+            print("gay")
+            print(i)
+
+        try:
+            if int(i) == -1:
+                retorno_gabarito.append(0)
+            else:
+                retorno_gabarito.append(1)
+        except:
+            print("gay2")
+            print(i)
         
         # break
 
@@ -84,7 +96,8 @@ def load_mfcc_GPU_validacao():
 
 class ANN(nn.Module):
     def __init__(self):
-        super().__init__()
+        # super().__init__()
+        super(ANN, self).__init__()
         
         self.CV0 = nn.Conv1d(in_channels=1, out_channels=64, kernel_size=(20,1), padding_mode='reflect', padding=(10,0)) #o certo era 20,2
         self.MXP0 = nn.MaxPool2d(kernel_size=(20, 1), stride=(5,1), padding=(5,0))
@@ -95,7 +108,7 @@ class ANN(nn.Module):
         # self.FLA = nn.Flatten()
 
         self.output0 = nn.Linear(in_features=11520, out_features=512)
-        self.output1 = nn.Linear(in_features=512, out_features=1)
+        self.output1 = nn.Linear(in_features=512, out_features=2)
         
 
 
@@ -117,3 +130,6 @@ class ANN(nn.Module):
         x = self.output1(x)
 
         return x
+
+
+# load_mfcc_GPU()

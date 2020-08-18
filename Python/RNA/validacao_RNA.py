@@ -9,31 +9,21 @@ dados,respostas = load_mfcc_GPU_validacao()
 desconhecido = 0
 certos = 0
 errados = 0
+resposta = 0
 
-i = 0
-while i < len(dados):
+for i in range (len(dados)):
 
     outputs = net(dados[i].unsqueeze(0).unsqueeze(0))
+    predicted = torch.max(outputs.unsqueeze(0), 1)
 
-    if outputs >= 0.70:
-
-        outputs = 1
-        if outputs == respostas[i]:
-            certos += 1
-        else:
-            errados += 1
-
-    elif outputs <= 0.30:
-        outputs = 0
-        if outputs == respostas[i]:
-            certos += 1
-        else:
-            errados += 1
-
+    if predicted[1][0].item() == respostas[i].item():
+        certos += 1
     else:
-        desconhecido += 1
+        errados += 1
+    
 
-    i += 1
+
+
 
 
 print("total: " + str(len(dados)))
