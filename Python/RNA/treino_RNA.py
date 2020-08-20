@@ -84,6 +84,9 @@ for i in range (len(entrada_validacao)):
 
     outputs = model(entrada_validacao[i].unsqueeze(0).unsqueeze(0))
     predicted = torch.max(outputs.unsqueeze(0), 1)
+    # print(outputs)
+    # print (torch.max(outputs.unsqueeze(0), 1))
+    # input("enter")
 
     if predicted[1][0].item() == respostas_vetor_validacao[i].item():
         certos += 1
