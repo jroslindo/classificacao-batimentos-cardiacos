@@ -1,4 +1,5 @@
 from Lib import * 
+import torch
 from sklearn.model_selection import train_test_split
 
 ### modelo da rede neural e parametros
@@ -9,7 +10,7 @@ model.train()
 # criterion = nn.MSELoss()
 criterion = nn.CrossEntropyLoss()
 
-optimizer = torch.optim.SGD(model.parameters(), lr=0.00015822)
+optimizer = torch.optim.SGD(model.parameters(), lr=0.00055310) # 0.00015822  0.00055310
 # optimizer = torch.optim.Adam(model.parameters(), lr=0.00015822) #, betas=[0.000076253698849,0.000076253698849], weight_decay=0.85565561 
 
 
@@ -24,7 +25,7 @@ entrada.requires_grad_()
 # print("Começando o treino")
 # running_loss = 0.0
 
-# for epoch in range(100):  # loop over the dataset multiple times
+# for epoch in range(50):  # loop over the dataset multiple times
 #     print(epoch)
 #     for i in range(len(entrada)):
 #         entrada_aux = entrada[i].unsqueeze(0)
@@ -73,7 +74,7 @@ entrada.requires_grad_()
 
 print("validando: \n\n")
 
-model.load_state_dict(torch.load("net-90.pth"))
+model.load_state_dict(torch.load("net-lr_diferente.pth"))
 model.eval()
 desconhecido = 0
 certos = 0

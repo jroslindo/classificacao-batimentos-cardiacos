@@ -45,8 +45,8 @@ def load_mfcc_GPU():
     retorno_gabarito = torch.cuda.LongTensor(retorno_gabarito)
     # retorno_gabarito.requires_grad_()
 
-    # torch.save(retorno, "data.pt")
-    # torch.save(retorno_gabarito, "target.pt")
+    torch.save(retorno, "data.pt")
+    torch.save(retorno_gabarito, "target.pt")
     
     # return retorno, retorno_gabarito
 
