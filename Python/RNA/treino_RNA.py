@@ -87,6 +87,8 @@ for i in range (len(entrada_validacao)):
     predicted = torch.max(outputs.unsqueeze(0), 1)
     # print(outputs)
     # print (torch.max(outputs.unsqueeze(0), 1))
+    # print(predicted[1][0].item())
+    # print(respostas_vetor_validacao[i].item())
     # input("enter")
 
     if predicted[1][0].item() == respostas_vetor_validacao[i].item():
