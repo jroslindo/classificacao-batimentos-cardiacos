@@ -1,10 +1,6 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-# import matplotlib.pyplot as plt
-
-# from scipy import misc
-# import numpy as np
 import pickle
 ########################################
 import os
@@ -41,61 +37,9 @@ def load_mfcc_GPU():
         
         # break
 
-    # retorno_gabarito = torch.cuda.FloatTensor(retorno_gabarito)
     retorno_gabarito = torch.cuda.LongTensor(retorno_gabarito)
-    # retorno_gabarito.requires_grad_()
-
     torch.save(retorno, "data.pt")
     torch.save(retorno_gabarito, "target.pt")
-    
-    # return retorno, retorno_gabarito
-
-def load_mfcc_GPU_validacao():
-    lista = os.listdir("..\\..\\validacao")
-    retorno = []
-    retorno_gabarito = []
-
-    ######################################pega os mfcc
-    for i in lista[:-1]:
-        with open("..\\..\\validacao\\" + i, "rb") as fp:
-            retorno.append(pickle.load(fp))
-
-    retorno = torch.cuda.FloatTensor(retorno)
-    # retorno.requires_grad_()
-
-    ################################## gabarito        
-    arquivo = open("..\\..\\validacao\\REFERENCE_validacao.csv", 'r')
-    
-    linha = arquivo.readlines()
-
-    for i in linha:
-        i = i.replace('\n', '')
-        
-
-        try:
-            i = i.split(',')[1]
-        except:
-            print("gay")
-            print(i)
-
-        try:
-            if int(i) == -1:
-                retorno_gabarito.append(0)
-            else:
-                retorno_gabarito.append(1)
-        except:
-            print("gay2")
-            print(i)
-        
-        # break
-
-    retorno_gabarito = torch.cuda.FloatTensor(retorno_gabarito)
-    # retorno_gabarito.requires_grad_()
-    
-    
-    return retorno, retorno_gabarito
-
-
 
 class ANN(nn.Module):
     def __init__(self):
@@ -134,5 +78,3 @@ class ANN(nn.Module):
 
         return x
 
-
-# load_mfcc_GPU()

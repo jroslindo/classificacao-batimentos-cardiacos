@@ -7,19 +7,14 @@ model = ANN()
 model.cuda()
 model.train()
 
-# criterion = nn.MSELoss()
+
 criterion = nn.CrossEntropyLoss()
-
 optimizer = torch.optim.SGD(model.parameters(), lr=0.00055310) # 0.00015822  0.00055310
-# optimizer = torch.optim.Adam(model.parameters(), lr=0.00015822) #, betas=[0.000076253698849,0.000076253698849], weight_decay=0.85565561 
-
-
-# entrada, respostas_vetor = load_mfcc_GPU()
 data = torch.load('data.pt')
 target = torch.load('target.pt')
-
 entrada, entrada_validacao , respostas_vetor, respostas_vetor_validacao = train_test_split(data, target, test_size=0.2, random_state=42)
 entrada.requires_grad_()
+
 
 
 # print("Começando o treino")
