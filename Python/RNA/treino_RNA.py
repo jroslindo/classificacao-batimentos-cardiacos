@@ -21,7 +21,7 @@ entrada.requires_grad_()
 # running_loss = 0.0
 
 # for epoch in range(50):  # loop over the dataset multiple times
-#     print(epoch)
+#     print("epoca " + str(epoch))
 #     for i in range(len(entrada)):
 #         entrada_aux = entrada[i].unsqueeze(0)
 
@@ -69,34 +69,39 @@ entrada.requires_grad_()
 
 print("validando: \n\n")
 
-model.load_state_dict(torch.load("net-lr_diferente.pth"))
+model.load_state_dict(torch.load("net.pth"))
 model.eval()
 desconhecido = 0
 certos = 0
 errados = 0
 resposta = 0
 
+arq = open("log.txt", "w")
+
 for i in range (len(entrada_validacao)):
 
     outputs = model(entrada_validacao[i].unsqueeze(0).unsqueeze(0))
     predicted = torch.max(outputs.unsqueeze(0), 1)
-    # print(outputs)
+    arq.write(str(outputs) + "\n")
     # print (torch.max(outputs.unsqueeze(0), 1))
-    # print(predicted[1][0].item())
-    # print(respostas_vetor_validacao[i].item())
+    arq.write("previsto: " + str(predicted[1][0].item()) + "\n")
+    arq.write("resposta: " + str(respostas_vetor_validacao[i].item())+ "\n")
     # input("enter")
 
     if predicted[1][0].item() == respostas_vetor_validacao[i].item():
+        arq.write("certo"+ "\n")
         certos += 1
     else:        
+        arq.write("errado"+ "\n")
         errados += 1
     
+    arq.write("--------------\n\n")
 
 
 
 
 
-print("total: " + str(len(entrada_validacao)))
-print("Certos: " + str(certos) + " Porcentagem: " + str(certos/len(entrada_validacao)))
-print("Errados: " + str(errados) + " Porcentagem: " + str(errados/len(entrada_validacao)))
-print("Desconhecido: " + str(desconhecido) + " Porcentagem: " + str(desconhecido/len(entrada_validacao)))
+arq.write("total: " + str(len(entrada_validacao))+ "\n")
+arq.write("Certos: " + str(certos) + " Porcentagem: " + str(certos/len(entrada_validacao))+ "\n")
+arq.write("Errados: " + str(errados) + " Porcentagem: " + str(errados/len(entrada_validacao))+ "\n")
+arq.write("Desconhecido: " + str(desconhecido) + " Porcentagem: " + str(desconhecido/len(entrada_validacao))+ "\n")
