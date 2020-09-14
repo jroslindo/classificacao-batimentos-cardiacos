@@ -1,7 +1,7 @@
 from Lib import * 
 import torch
 from sklearn.model_selection import train_test_split
-
+import matplotlib.pyplot as plt
 ### modelo da rede neural e parametros
 model = ANN()
 model.cuda()
@@ -15,47 +15,54 @@ target = torch.load('target.pt')
 entrada, entrada_validacao , respostas_vetor, respostas_vetor_validacao = train_test_split(data, target, test_size=0.2, random_state=42)
 entrada.requires_grad_()
 
+graph_error = []
+graph_x     = []
+j=0
+
+print("Começando o treino")
+running_loss = 0.0
+
+for epoch in range(100):  # loop over the dataset multiple times
+    print("epoca " + str(epoch))
+    for i in range(len(entrada)):
+        entrada_aux = entrada[i].unsqueeze(0)
+
+        optimizer.zero_grad()
+
+        outputs = model(entrada_aux.unsqueeze(0))
+
+        # if i == 0:
+        #     print(outputs)
+        #     print(respostas_vetor[i])
+        #     print("\n--------------------------\n")
+
+        # loss = criterion(outputs, respostas_vetor[i].unsqueeze(0))
+        loss = criterion(outputs.unsqueeze(0), respostas_vetor[i].unsqueeze(0)) #respostas_vetor[i].unsqueeze(0)
+
+        if i == 0:
+            loss.backward(retain_graph=True)
+        else:
+            loss.backward(retain_graph=True)
+
+        optimizer.step()
+
+        running_loss += loss.item()
+
+    if (epoch % 10 == 9):
+        print(str(running_loss/(len(entrada)*epoch)) + "\n---------------------\n")
+        graph_error.append(running_loss/(len(entrada)*epoch))
+        graph_x.append(j)
+        j+=1
 
 
-# print("Começando o treino")
-# running_loss = 0.0
 
-# for epoch in range(50):  # loop over the dataset multiple times
-#     print("epoca " + str(epoch))
-#     for i in range(len(entrada)):
-#         entrada_aux = entrada[i].unsqueeze(0)
+print('Finished Training:  ' + str(running_loss/(len(entrada)*epoch)) + " --Salvando o modelo")
 
-#         optimizer.zero_grad()
+torch.save(model.state_dict(), "net.pth")
 
-#         outputs = model(entrada_aux.unsqueeze(0))
-
-#         # if i == 0:
-#         #     print(outputs)
-#         #     print(respostas_vetor[i])
-#         #     print("\n--------------------------\n")
-
-#         # loss = criterion(outputs, respostas_vetor[i].unsqueeze(0))
-#         loss = criterion(outputs.unsqueeze(0), respostas_vetor[i].unsqueeze(0)) #respostas_vetor[i].unsqueeze(0)
-
-#         if i == 0:
-#             loss.backward(retain_graph=True)
-#         else:
-#             loss.backward(retain_graph=True)
-
-#         optimizer.step()
-
-#         running_loss += loss.item()
-
-#     if (epoch % 10 == 9):
-#         print(str(running_loss/(len(entrada)*epoch)) + "\n---------------------\n")
-
-
-
-# print('Finished Training:  ' + str(running_loss/(len(entrada)*epoch)) + " --Salvando o modelo")
-
-# torch.save(model.state_dict(), "net.pth")
-
-
+plt.plot(graph_x, graph_error)
+plt.show()
+plt.waitforbuttonpress()
 
 
 
@@ -101,7 +108,7 @@ for i in range (len(entrada_validacao)):
 
 
 
-arq.write("total: " + str(len(entrada_validacao))+ "\n")
-arq.write("Certos: " + str(certos) + " Porcentagem: " + str(certos/len(entrada_validacao))+ "\n")
-arq.write("Errados: " + str(errados) + " Porcentagem: " + str(errados/len(entrada_validacao))+ "\n")
-arq.write("Desconhecido: " + str(desconhecido) + " Porcentagem: " + str(desconhecido/len(entrada_validacao))+ "\n")
+print("total: " + str(len(entrada_validacao))+ "\n")
+print("Certos: " + str(certos) + " Porcentagem: " + str(certos/len(entrada_validacao))+ "\n")
+print("Errados: " + str(errados) + " Porcentagem: " + str(errados/len(entrada_validacao))+ "\n")
+print("Desconhecido: " + str(desconhecido) + " Porcentagem: " + str(desconhecido/len(entrada_validacao))+ "\n")
