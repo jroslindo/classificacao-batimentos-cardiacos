@@ -55,7 +55,9 @@ class ANN(nn.Module):
         # self.FLA = nn.Flatten()
 
         self.output0 = nn.Linear(in_features=11520, out_features=512)
+
         self.output1 = nn.Linear(in_features=512, out_features=2)
+
         
 
 
