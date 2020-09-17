@@ -80,3 +80,9 @@ class ANN(nn.Module):
 
         return x
 
+class treino():
+    def __init__ (self):
+        self.rede = None
+        self.epoca = None
+        self.erro_treino = None
+        self.erro_validacao = None

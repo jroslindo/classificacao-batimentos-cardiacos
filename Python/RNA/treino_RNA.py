@@ -6,30 +6,45 @@ import matplotlib.pyplot as plt
 model = ANN()
 model.cuda()
 model.train()
-
+model.dropout = 0.85565561
 
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.SGD(model.parameters(), lr=0.00055310) # 0.00015822  0.00055310
+optimizer = torch.optim.SGD(model.parameters(), lr=0.00015822) # 0.00015822  0.00055310
 data = torch.load('data.pt')
 target = torch.load('target.pt')
 # print(data.shape)
 # print(data[:-300].shape)
 # print(data[-300:].shape)
 
-entrada, entrada_validacao , respostas_vetor, respostas_vetor_validacao = train_test_split(data[:-300], target[:-300], test_size=0.1, random_state=10)
+entrada, entrada_validacao , respostas_vetor, respostas_vetor_validacao = train_test_split(data, target, test_size=0.2, random_state=42)
 entrada.requires_grad_()
 
 grafico_treino = []
 grafico_validacao = []
 grafico_x     = []
+# print(entrada_validacao.shape)
+# exit()
+entrada_teste = entrada_validacao[324:]
+resposta_teste = respostas_vetor_validacao[324:]
 
+entrada_validacao = entrada_validacao[:324]
+respostas_vetor_validacao = respostas_vetor_validacao[:324]
 print("Começando o treino")
-running_loss = 0.0
 
-for epoch in range(70):  # loop over the dataset multiple times
+
+historico_rede = []
+
+for epoch in range(200):  # loop over the dataset multiple times
     print("epoca " + str(epoch))
-    anterior = model
+    # anterior = model
+    
+    aux_treino = treino()
+    aux_treino.rede = model
+    aux_treino.epoca = epoch
+    
+    # TREINANDOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
     model.train()
+    model.dropout = 0.85565561
     running_loss = 0.0
     for i in range(len(entrada)):
         entrada_aux = entrada[i].unsqueeze(0)
@@ -49,7 +64,8 @@ for epoch in range(70):  # loop over the dataset multiple times
         running_loss += loss.item()
 
     erro_treino = (running_loss/len(entrada))*100
-    grafico_treino.append(erro_treino)
+    grafico_treino.append(erro_treino)    
+    aux_treino.erro_treino = erro_treino
     print(grafico_treino[-1])
 
     #VALIDANDOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
@@ -61,24 +77,16 @@ for epoch in range(70):  # loop over the dataset multiple times
         outputs = model(entrada_validacao[i].unsqueeze(0).unsqueeze(0))
         predicted = torch.max(outputs.unsqueeze(0), 1)
 
-
-        # loss = criterion(outputs.unsqueeze(0), respostas_vetor_validacao[i].unsqueeze(0))
-        # running_loss += loss.item()
-
         if predicted[1][0].item() == respostas_vetor_validacao[i].item():
             certos += 1
 
     erro_validacao = (1-certos/len(entrada_validacao))*100
+    aux_treino.erro_validacao = erro_validacao
 
-    if epoch > 1 and grafico_validacao[-1] < erro_validacao and erro_treino < erro_validacao: #and (abs(grafico_validacao[-1] - erro_validacao) > 0.5) 
-        grafico_validacao.append((1-certos/len(entrada_validacao))*100)
-        grafico_x.append(epoch)
-        print(grafico_validacao[-1])
-        break
-
-    grafico_validacao.append((1-certos/len(entrada_validacao))*100)
+    grafico_validacao.append(erro_validacao)
     grafico_x.append(epoch)
-    print(grafico_validacao[-1])    
+    print(grafico_validacao[-1])
+    historico_rede.append(aux_treino)
     print("---------------\n")
 
 
@@ -87,20 +95,32 @@ plt.show()
 
 print('Finished Training:  ' + str(grafico_treino[-1]) + " --Salvando o modelo")
 
-torch.save(anterior.state_dict(), "net.pth")
+
+
+aux_menor = treino()
+aux_menor.erro_validacao = 100
+for erro in historico_rede:
+    if erro.erro_validacao < aux_menor.erro_validacao:
+        aux_menor = erro
+
+print("menor erro treino: ")
+print(aux_menor.erro_treino)
+print("menor erro validacao: ")
+print(aux_menor.erro_validacao)
+print("melhor epoca: ")
+print(aux_menor.epoca)
+
+torch.save(aux_menor.rede.state_dict(), "net.pth")
+
+# # exit()
 
 
 
 
-# exit()
 
 
-
-
-
-
-entrada_teste = data[-300:]
-resposta_teste = target[-300:]
+# entrada_teste = data[-300:]
+# resposta_teste = target[-300:]
 
 
 
