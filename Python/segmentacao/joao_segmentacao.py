@@ -31,8 +31,8 @@ def segmentation(file_name, segmentos):
     comecou = False
     aux = 'x'
     inicial = 'x'
-    final = 'x'
-    estagio = 0
+    # final = 'x'
+    # estagio = 0
 
     for i in range(0, len(sig)):
         anterior = aux

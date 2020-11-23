@@ -12,8 +12,8 @@ def main(file):
     mfcc_feat = mfcc(sig,rate)
     fbank_feat = logfbank(sig,rate)
 
-    # utilizar como principal para salvar
-    with open("..\\mfcc\\resultados\\"+file[:-3]+"txt", "wb") as fp:   #Pickling
+    # utilizar para salvar o vetor de mfcc
+    with open("..\\mfcc\\resultados\\"+file[:-3]+"txt", "wb") as fp:
         pickle.dump(fbank_feat[0:301:,0:6], fp)
 
     

@@ -1,0 +1,6 @@
+tensor([ 1.4399, -1.6244], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+

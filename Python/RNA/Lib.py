@@ -46,7 +46,7 @@ class ANN(nn.Module):
         # super().__init__()
         super(ANN, self).__init__()
         
-        self.CV0 = nn.Conv1d(in_channels=1, out_channels=64, kernel_size=(20,1), padding_mode='reflect', padding=(10,0)) #o certo era 20,2
+        self.CV0 = nn.Conv2d(in_channels=1, out_channels=64, kernel_size=(20,1), padding_mode='reflect', padding=(10,0)) #o certo era 20,2
         self.MXP0 = nn.MaxPool2d(kernel_size=(20, 1), stride=(5,1), padding=(5,0))
 
         self.CV1 = nn.Conv2d(in_channels=64, out_channels=64, kernel_size=(10,1), padding_mode='reflect', padding=(5,0))
@@ -55,7 +55,9 @@ class ANN(nn.Module):
         # self.FLA = nn.Flatten()
 
         self.output0 = nn.Linear(in_features=11520, out_features=512)
+
         self.output1 = nn.Linear(in_features=512, out_features=2)
+
         
 
 
@@ -78,3 +80,9 @@ class ANN(nn.Module):
 
         return x
 
+class treino():
+    def __init__ (self):
+        self.rede = None
+        self.epoca = None
+        self.erro_treino = None
+        self.erro_validacao = None
