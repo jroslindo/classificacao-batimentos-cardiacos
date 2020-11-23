@@ -12,7 +12,9 @@ model.train()
 model.dropout = 0.85565561
 
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.SGD(model.parameters(), lr=0.00015822, momentum=0.8) # 0.00015822  0.00055310
+# optimizer = torch.optim.SGD(model.parameters(), lr=0.00015822, momentum=0.8) # 0.00015822  0.00055310
+optimizer = torch.optim.Adam(model.parameters(), lr=0.00015822) # 0.00015822  0.00055310
+
 data = torch.load('data.pt')
 target = torch.load('target.pt')
 
@@ -116,7 +118,7 @@ respostas_vetor_validacao = respostas_vetor_validacao[:324]
 
 print("validando: \n\n")
 
-model.load_state_dict(torch.load("net-088-2.pth"))
+model.load_state_dict(torch.load("net-rubin.pth"))
 model.eval()
 
 desconhecido = 0
