@@ -1,0 +1,1944 @@
+tensor([ 6.2425, -5.8579], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.8211, -4.6421], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 2.3704, -2.3582], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.4420, -5.3110], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.4268, -5.2821], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.1919, -3.1031], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.3169, -4.9364], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.4133, -5.1553], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-0.0463,  0.3746], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 3.9416, -3.8285], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.2291, -5.0096], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.7007, -5.4402], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-0.5097,  0.7370], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([-5.4456,  5.6870], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 5.8166, -5.5725], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 1.8621, -1.7962], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 0.3638, -0.1701], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 6.0178, -5.7362], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 0.4512, -0.0124], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-2.8282,  3.2061], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 5.5862, -5.2448], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.8564, -4.6451], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-2.4498,  2.8541], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 5.4527, -5.2621], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-4.3337,  4.4735], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 4.5024, -4.2572], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-2.7572,  2.7327], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 5.3866, -5.1697], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.8167, -4.6300], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-2.2596,  2.2716], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 3.7929, -3.5958], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.8144, -3.6029], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.1213, -2.8207], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-2.0309,  2.2100], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 4.7337, -4.5848], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-0.7161,  1.1213], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 3.1126, -2.6659], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.9957, -5.6526], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.2832, -4.1669], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.2239, -3.7214], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-7.7329,  8.0351], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 6.1472, -5.8679], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.1565, -3.9984], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 1.5977, -1.2682], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.9763, -5.5973], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 6.9234, -6.4677], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.1801, -2.9276], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-0.1582,  0.3749], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 2.7191, -2.7206], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.2370, -3.1589], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([-0.7490,  0.7341], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 3.4082, -3.2649], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 2.4339, -2.1894], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.8148, -4.6379], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.1626, -5.0148], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-0.5099,  0.7484], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 4.8403, -4.6425], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.2124, -4.9851], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.2222, -5.0237], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.0752, -4.8581], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 6.7627, -6.4605], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.7892, -5.4523], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-2.0958,  2.4130], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 5.0047, -4.7409], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.8155, -5.5728], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.6051, -5.2987], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.4404, -3.9906], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 2.4232, -2.1535], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.3828, -4.2930], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-1.6148,  2.1259], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 4.2754, -3.8168], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-1.7302,  2.3297], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 1.6397, -1.2185], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 3.6752, -3.5812], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.6500, -4.4752], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 6.4430, -6.0723], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.4669, -5.0377], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.5446, -5.2814], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.1493, -4.8500], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.7686, -3.3848], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.5338, -5.1664], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.1702, -4.8715], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-1.5214,  1.7652], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 4.4385, -3.9059], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.2341, -2.9876], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.9040, -4.6504], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.3306, -3.2045], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.4483, -5.0984], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-1.0286,  1.4913], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 5.3999, -5.1143], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.6931, -4.4034], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.7104, -5.4092], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-0.5634,  1.0250], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 3.6391, -3.7815], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.7179, -4.4151], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.8246, -4.6338], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.7827, -4.3426], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 1.5361, -1.4675], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.2211, -5.0179], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-3.2655,  3.2282], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 1.9313, -1.9244], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.9924, -3.7204], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.6152, -3.4705], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.1596, -4.9196], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.9891, -3.4534], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.7569, -4.4505], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-1.9558,  2.2630], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 4.5143, -4.2991], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.3473, -5.1636], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.3430, -5.0510], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.3729, -4.1332], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.6606, -3.6414], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.8367, -5.6443], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-8.0690,  8.3356], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 4.3887, -4.1804], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.2116, -2.8388], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 5.7738, -5.4360], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.0856, -3.6777], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.8985, -3.6526], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 5.7042, -5.5266], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.1598, -2.6060], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 1.8242, -1.6904], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.6816, -4.4131], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.5626, -5.2530], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.4324, -3.2577], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-5.6371,  6.0140], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 6.1348, -5.7382], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-3.0269,  3.0697], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 4.7731, -4.6425], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 2.4416, -1.9984], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([-0.7291,  1.2038], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 3.1905, -3.1223], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 6.0729, -5.9081], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.1742, -4.9511], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.3241, -3.9360], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.4634, -3.4244], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.2870, -4.8955], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.6033, -5.3985], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 2.9323, -2.8333], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 5.6387, -5.4749], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 2.3938, -2.0007], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.7452, -4.5761], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.7010, -5.4065], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.4009, -4.0570], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.4018, -5.2138], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-3.1810,  3.5689], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 5.1540, -4.9359], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 2.6546, -2.4516], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.7485, -5.3678], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.3459, -4.1861], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-1.1447,  1.6233], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 5.5750, -5.3541], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.8534, -3.6915], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.2072, -3.0856], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.6136, -3.6367], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 5.4817, -5.3095], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.6491, -4.3485], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.3833, -5.1130], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.0739, -4.8628], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-1.7513,  1.9483], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 4.5963, -4.4493], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.1047, -2.5784], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 1.5789, -1.2821], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.2098, -3.6102], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.7842, -5.5055], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.0953, -4.8383], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.7639, -4.4686], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.6393, -4.3896], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.7289, -5.3992], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 6.2223, -5.8818], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 1.5866, -1.1748], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.7688, -5.6143], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([0.2734, 0.1947], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-1.2559,  1.2917], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([0.1292, 0.0071], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 2.7032, -2.5778], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 2.3768, -2.2978], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 5.1150, -4.9948], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.6837, -4.3339], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.0795, -3.0090], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.1734, -4.8720], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-3.1510,  3.3546], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 5.0790, -4.8162], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.3439, -3.9882], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 1.3189, -1.0080], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 4.7713, -4.4581], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.8520, -3.5813], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 6.3222, -6.0228], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.5600, -4.3732], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 7.1409, -6.7890], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.3775, -5.2836], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.3404, -4.0954], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.6295, -4.3867], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.3161, -5.0359], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.1440, -4.9281], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.6488, -4.2272], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.6590, -4.3680], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-3.5183,  3.4768], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([-4.9205,  5.2640], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 4.9468, -4.9418], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 0.6473, -0.4958], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 3.2507, -3.0314], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-4.8690,  5.0372], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 5.4430, -5.1111], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-0.1531,  0.6234], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 4.7821, -4.5145], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.4140, -3.8904], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.3245, -3.9991], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 2.6147, -2.5292], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 3.3169, -3.2396], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.8260, -4.6594], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 6.4810, -6.1421], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.1102, -4.9432], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 1.2535, -1.0668], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 0.5734, -0.2353], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 4.8165, -4.6415], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.4888, -5.2745], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.2873, -4.8563], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.3711, -5.0489], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.7607, -4.5158], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 0.6711, -0.6579], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 4.2154, -3.7195], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.4810, -4.3690], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 4.9742, -4.6624], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-0.9545,  1.4154], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 1.0611, -1.1121], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.4299, -4.2002], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.0787, -4.8139], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-5.6010,  5.9504], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 5.7679, -5.2617], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.8242, -5.6390], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 2.0200, -1.6875], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 0.3134, -0.1687], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 4.6109, -4.3976], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.3116, -5.1225], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 2.8553, -2.6846], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-0.5761,  1.1129], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 5.1631, -4.9762], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-6.5255,  6.6738], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 4.4799, -4.2699], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-1.1683,  1.3803], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 4.7964, -4.6389], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-5.2729,  5.1125], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([-0.7841,  0.9549], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([-12.8251,  13.1575], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 4.0363, -3.8061], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.6058, -5.3622], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.2511, -5.0438], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.1118, -3.8112], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.6138, -3.4606], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.7765, -5.5444], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 6.1288, -5.8205], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-0.3324,  0.6390], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 2.4306, -2.0406], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.4652, -5.1218], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.8403, -5.5693], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.9191, -4.6964], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.9348, -5.6049], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.7299, -5.4396], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.6270, -5.2958], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-11.6341,  11.8020], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([-1.6446,  1.8578], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 5.1343, -4.8949], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.6463, -5.2715], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 2.9707, -2.7979], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([0.0563, 0.1109], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([-0.1122,  0.2471], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 2.3911, -1.8837], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 5.6584, -5.3154], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.1252, -4.8281], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.9955, -4.7657], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.3166, -4.0915], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.1643, -4.8564], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.3752, -5.1533], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 6.4140, -6.0898], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.2339, -4.9675], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 2.2007, -2.1661], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.5568, -5.4311], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.7806, -5.5636], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-0.8562,  1.0102], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 2.3542, -2.0548], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 5.3242, -4.9736], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.7017, -5.4162], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.3488, -4.9362], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 5.5574, -5.1398], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-8.6652,  8.9941], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 2.5910, -2.2482], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 5.5317, -5.2089], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.3214, -5.1156], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.6562, -3.4934], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.4426, -4.2274], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.3504, -2.6593], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.1178, -3.9629], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 1.7937, -1.4911], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.4138, -4.1157], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 5.8617, -5.4792], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-0.6949,  0.9796], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([0.0868, 0.3647], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([-3.8405,  4.2565], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 4.1050, -4.0087], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 4.8282, -4.4917], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 2.6674, -2.5139], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.6708, -5.2546], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.7269, -5.3367], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.0114, -4.8147], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.9469, -4.9151], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([ 5.3066, -5.1523], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 0.7808, -0.4830], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 1
+errado
+--------------
+
+tensor([-2.4921,  2.3827], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 5.0548, -4.8305], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 3.6369, -3.2690], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 1.9583, -1.7601], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.8810, -5.6786], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.2028, -4.9284], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-1.8901,  1.9903], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 1
+certo
+--------------
+
+tensor([ 6.0558, -5.8600], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.6452, -4.2592], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.2274, -5.0245], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.3398, -5.1380], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 5.0966, -4.7554], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 2.9854, -2.5923], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([-2.0879,  2.6166], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 1
+resposta: 0
+errado
+--------------
+
+tensor([ 0.7328, -0.7219], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
+tensor([ 4.4063, -4.2011], device='cuda:0', grad_fn=<AddBackward0>)
+previsto: 0
+resposta: 0
+certo
+--------------
+
